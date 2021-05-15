@@ -56,4 +56,17 @@ int8_t usartGetChar();
  */
 uint8_t usartGetString(int8_t *s);
 
+/**
+ * Funkcija koja u nadolazecem nizu karaktera vidi koji je prvi karakter tog niza, bez da sakati ostatak stringa.
+ * @return prvi karakter stringa
+ */
+int8_t usartPeek();
+
+/**
+ * Funkcija koja u nizu karaktera vraca ceo broj.
+ * @return validan ceo broj u nadolazecem nizu karaktera
+ */
+int16_t usartParseInt();
+
+
 #endif /* USART_H_ */
