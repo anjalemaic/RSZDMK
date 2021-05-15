@@ -1,0 +1,88 @@
+\hypertarget{main_8c}{}\doxysection{main.\+c File Reference}
+\label{main_8c}\index{main.c@{main.c}}
+
+
+Aplikacija koja implementira ogranicen broj treptanja diode.  
+
+
+{\ttfamily \#include \char`\"{}../usart/usart.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$util/delay.\+h$>$}\newline
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+{\ttfamily \#include $<$avr/pgmspace.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int8\+\_\+t \mbox{\hyperlink{main_8c_a334e82c24e4bc4af1a566f96700521bb}{check}} (char str\mbox{[}$\,$\mbox{]}, int8\+\_\+t duz)
+\item 
+void \mbox{\hyperlink{main_8c_a1291b17adc256ac715f23f70e934e8a3}{remove\+Blank}} (char str\mbox{[}$\,$\mbox{]}, int8\+\_\+t duz)
+\item 
+void \mbox{\hyperlink{main_8c_a4fc0d718fdd0b34a73f2ca91ff3b759c}{capitalise}} (char str\mbox{[}$\,$\mbox{]}, int8\+\_\+t duz)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Aplikacija koja implementira ogranicen broj treptanja diode. 
+
+\begin{DoxyAuthor}{Author}
+Anja Lemaic 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+15-\/05-\/2021 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_a4fc0d718fdd0b34a73f2ca91ff3b759c}\label{main_8c_a4fc0d718fdd0b34a73f2ca91ff3b759c}} 
+\index{main.c@{main.c}!capitalise@{capitalise}}
+\index{capitalise@{capitalise}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{capitalise()}{capitalise()}}
+{\footnotesize\ttfamily void capitalise (\begin{DoxyParamCaption}\item[{char}]{str\mbox{[}$\,$\mbox{]},  }\item[{int8\+\_\+t}]{duz }\end{DoxyParamCaption})}
+
+Funkcija koja kapitalizuje sva slova 
+\begin{DoxyParams}{Parameters}
+{\em str} & -\/ String koji gledamo \\
+\hline
+{\em duz} & -\/ Duzina stringa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vraca kapitalizovan string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8c_a334e82c24e4bc4af1a566f96700521bb}\label{main_8c_a334e82c24e4bc4af1a566f96700521bb}} 
+\index{main.c@{main.c}!check@{check}}
+\index{check@{check}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily int8\+\_\+t check (\begin{DoxyParamCaption}\item[{char}]{str\mbox{[}$\,$\mbox{]},  }\item[{int8\+\_\+t}]{duz }\end{DoxyParamCaption})}
+
+Funkcija koja proverava da li su naredni karakteri iznad trenutnog 
+\begin{DoxyParams}{Parameters}
+{\em str} & -\/ String koji gledamo \\
+\hline
+{\em duz} & -\/ Duzina stringa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vraca 1 ako je dobro, 0 ako nije 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8c_a1291b17adc256ac715f23f70e934e8a3}\label{main_8c_a1291b17adc256ac715f23f70e934e8a3}} 
+\index{main.c@{main.c}!removeBlank@{removeBlank}}
+\index{removeBlank@{removeBlank}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{removeBlank()}{removeBlank()}}
+{\footnotesize\ttfamily void remove\+Blank (\begin{DoxyParamCaption}\item[{char}]{str\mbox{[}$\,$\mbox{]},  }\item[{int8\+\_\+t}]{duz }\end{DoxyParamCaption})}
+
+Funkcija koja uklanja razmake 
+\begin{DoxyParams}{Parameters}
+{\em str} & -\/ String koji gledamo \\
+\hline
+{\em duz} & -\/ Duzina stringa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vraca string bez razmaka 
+\end{DoxyReturn}
